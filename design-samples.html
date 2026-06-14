@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 提案用の下書き。公開・検索インデックスはさせない -->
+<meta name="robots" content="noindex, nofollow">
+<title>デザインサンプル集｜オーダーメイドのホームページ制作 LP × 5テイスト</title>
+<meta name="description" content="同じLP内容を5つのデザインテイストで制作したサンプル集。ご提案用。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=M+PLUS+Rounded+1c:wght@400;500;800&family=Anton&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   共通リセット・サンプル集の枠組み
+================================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: "Noto Sans JP", sans-serif; color: #1c1d20; background: #e9e7e2; line-height: 1.9; }
+img { display: block; max-width: 100%; height: auto; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+
+/* ---- サンプル集ヘッダー ---- */
+.guide-head {
+  background: #1c1d20;
+  color: #f1efe9;
+  padding: 64px 24px 56px;
+  text-align: center;
+}
+.guide-head .mono { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .3em; color: #9aa0a6; display: block; margin-bottom: 18px; }
+.guide-head h1 { font-size: clamp(22px, 4vw, 34px); font-weight: 900; letter-spacing: .08em; margin-bottom: 14px; }
+.guide-head p { font-size: 14px; color: #b9bdc2; max-width: 640px; margin: 0 auto; }
+
+/* ---- ジャンプナビ ---- */
+.guide-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: #1c1d20;
+  border-top: 1px solid #34363b;
+  border-bottom: 1px solid #34363b;
+  display: flex; justify-content: center; flex-wrap: wrap;
+}
+.guide-nav a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px; letter-spacing: .12em;
+  color: #b9bdc2; padding: 13px 18px;
+  border-left: 1px solid #34363b;
+  transition: color .2s, background .2s;
+}
+.guide-nav a:last-child { border-right: 1px solid #34363b; }
+.guide-nav a:hover { color: #fff; background: #2a2c31; }
+
+/* ---- パターン区切りラベル ---- */
+.pattern-label {
+  background: #1c1d20; color: #f1efe9;
+  padding: 56px 24px;
+}
+.pattern-label .inner { max-width: 1080px; margin: 0 auto; display: flex; gap: 28px; align-items: baseline; flex-wrap: wrap; }
+.pattern-label .tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px; letter-spacing: .2em;
+  border: 1px solid #5f6368; padding: 6px 16px; white-space: nowrap;
+}
+.pattern-label h2 { font-size: clamp(20px, 3vw, 28px); font-weight: 900; letter-spacing: .06em; }
+.pattern-label p { width: 100%; font-size: 13.5px; color: #b9bdc2; max-width: 760px; }
+
+/* ================================================================
+   Pattern A — ミニマル・モダン
+   余白・モノトーン・コバルト1色・サンセリフ
+================================================================ */
+.pa { background: #fbfbfa; color: #141414; font-family: "Manrope", "Noto Sans JP", sans-serif; }
+.pa .wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+.pa .label { font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: #0047ff; font-weight: 800; display: block; margin-bottom: 18px; }
+
+.pa-hero { padding: 130px 0 110px; border-bottom: 1px solid #e4e4e0; }
+.pa-hero h2 { font-size: clamp(30px, 5vw, 54px); font-weight: 900; letter-spacing: .04em; line-height: 1.5; margin-bottom: 26px; }
+.pa-hero h2 b { color: #0047ff; font-weight: 900; }
+.pa-hero p { color: #6b6b66; max-width: 560px; margin-bottom: 44px; font-size: 15px; }
+.pa-btn {
+  display: inline-block; background: #141414; color: #fff;
+  font-size: 14px; font-weight: 700; letter-spacing: .12em;
+  padding: 17px 46px; transition: background .25s;
+}
+.pa-btn:hover { background: #0047ff; }
+
+.pa-sec { padding: 96px 0; border-bottom: 1px solid #e4e4e0; }
+.pa h3.title { font-size: clamp(22px, 3vw, 30px); font-weight: 900; letter-spacing: .06em; margin-bottom: 56px; }
+
+.pa-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+.pa-values .num { font-size: 12px; font-weight: 800; color: #0047ff; letter-spacing: .2em; display: block; margin-bottom: 14px; }
+.pa-values h4 { font-size: 17px; font-weight: 900; letter-spacing: .08em; margin-bottom: 10px; }
+.pa-values p { font-size: 13.5px; color: #6b6b66; }
+
+.pa-works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.pa-work { border: 1px solid #e4e4e0; background: #fff; transition: transform .25s, box-shadow .25s; }
+.pa-work:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.08); }
+.pa-work .body { padding: 20px 22px 24px; }
+.pa-work h4 { font-size: 15px; font-weight: 800; margin-bottom: 4px; }
+.pa-work span { font-size: 11.5px; color: #0047ff; letter-spacing: .14em; font-weight: 700; }
+
+.pa-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: stretch; }
+.pa-plan { border: 1px solid #e4e4e0; background: #fff; padding: 36px 30px; }
+.pa-plan.featured { border: 2px solid #141414; position: relative; }
+.pa-plan.featured::before { content: "POPULAR"; position: absolute; top: -11px; left: 26px; background: #0047ff; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: .2em; padding: 2px 12px; }
+.pa-plan h4 { font-size: 13px; font-weight: 800; letter-spacing: .22em; color: #6b6b66; margin-bottom: 14px; }
+.pa-plan .price { font-size: 32px; font-weight: 900; letter-spacing: .02em; margin-bottom: 22px; }
+.pa-plan .price small { font-size: 14px; color: #6b6b66; font-weight: 600; }
+.pa-plan li { font-size: 13px; color: #444; padding: 7px 0 7px 18px; position: relative; border-top: 1px solid #f0f0ec; }
+.pa-plan li::before { content: ""; position: absolute; left: 0; top: 17px; width: 8px; height: 1.5px; background: #0047ff; }
+
+.pa-cta { padding: 110px 0; text-align: center; }
+.pa-cta h3 { font-size: clamp(22px, 3.4vw, 32px); font-weight: 900; letter-spacing: .06em; margin-bottom: 16px; }
+.pa-cta p { color: #6b6b66; font-size: 14px; margin-bottom: 38px; }
+
+/* ================================================================
+   Pattern B — 高級感・ダーク
+   黒×ゴールド・セリフ見出し
+================================================================ */
+.pb { background: #0e0d0b; color: #e8e2d6; font-family: "Noto Serif JP", serif; }
+.pb .wrap { max-width: 1020px; margin: 0 auto; padding: 0 28px; }
+.pb .en { font-family: "Playfair Display", serif; }
+.pb .label { font-size: 11px; letter-spacing: .42em; color: #c8a96e; display: block; margin-bottom: 22px; font-family: "Playfair Display", serif; text-transform: uppercase; }
+.pb .rule { width: 56px; height: 1px; background: #c8a96e; margin: 0 auto 26px; }
+
+.pb-hero { padding: 150px 0 130px; text-align: center; position: relative; }
+.pb-hero::after { content: ""; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 1px; height: 70px; background: linear-gradient(#c8a96e, transparent); }
+.pb-hero h2 { font-size: clamp(28px, 4.6vw, 48px); font-weight: 600; letter-spacing: .14em; line-height: 1.7; margin-bottom: 28px; }
+.pb-hero h2 em { font-style: normal; color: #c8a96e; }
+.pb-hero p { color: #9d968a; font-size: 14px; letter-spacing: .1em; margin-bottom: 52px; }
+.pb-btn {
+  display: inline-block; border: 1px solid #c8a96e; color: #c8a96e;
+  font-size: 13px; letter-spacing: .3em; padding: 18px 56px;
+  transition: background .3s, color .3s;
+}
+.pb-btn:hover { background: #c8a96e; color: #0e0d0b; }
+
+.pb-sec { padding: 100px 0; border-top: 1px solid #26231e; text-align: center; }
+.pb h3.title { font-size: clamp(22px, 3vw, 30px); font-weight: 600; letter-spacing: .2em; margin-bottom: 60px; }
+
+.pb-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #26231e; border: 1px solid #26231e; }
+.pb-values > div { background: #0e0d0b; padding: 46px 30px; }
+.pb-values .en { font-size: 13px; letter-spacing: .3em; color: #c8a96e; display: block; margin-bottom: 16px; }
+.pb-values h4 { font-size: 18px; letter-spacing: .2em; font-weight: 600; margin-bottom: 14px; }
+.pb-values p { font-size: 13px; color: #9d968a; text-align: left; line-height: 2.1; }
+
+.pb-works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.pb-work { text-align: left; }
+.pb-work .frame { border: 1px solid #3a352c; padding: 8px; transition: border-color .3s; }
+.pb-work:hover .frame { border-color: #c8a96e; }
+.pb-work img { filter: sepia(.18) contrast(.98); }
+.pb-work h4 { font-size: 15px; letter-spacing: .12em; margin: 18px 0 4px; }
+.pb-work span { font-size: 11px; letter-spacing: .28em; color: #c8a96e; }
+
+.pb-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.pb-plan { border: 1px solid #3a352c; padding: 44px 32px; text-align: center; }
+.pb-plan.featured { border-color: #c8a96e; background: #14120e; }
+.pb-plan .en { font-size: 14px; letter-spacing: .34em; color: #c8a96e; display: block; margin-bottom: 20px; }
+.pb-plan .price { font-family: "Playfair Display", "Noto Serif JP", serif; font-size: 34px; letter-spacing: .04em; margin-bottom: 26px; }
+.pb-plan .price small { font-size: 14px; color: #9d968a; }
+.pb-plan li { font-size: 12.5px; color: #9d968a; letter-spacing: .08em; padding: 8px 0; border-top: 1px solid #26231e; }
+
+.pb-cta { padding: 130px 0 140px; text-align: center; border-top: 1px solid #26231e; }
+.pb-cta h3 { font-size: clamp(24px, 3.6vw, 36px); letter-spacing: .18em; font-weight: 600; margin-bottom: 18px; }
+.pb-cta p { color: #9d968a; font-size: 13.5px; letter-spacing: .1em; margin-bottom: 46px; }
+
+/* ================================================================
+   Pattern C — ポップ・カラフル
+   グラデーション・丸み・親しみ
+================================================================ */
+.pc { background: #fff8f0; color: #3a2e39; font-family: "M PLUS Rounded 1c", "Noto Sans JP", sans-serif; }
+.pc .wrap { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+.pc .label { display: inline-block; background: #ffe45c; color: #3a2e39; font-size: 12px; font-weight: 800; letter-spacing: .14em; border-radius: 999px; padding: 6px 20px; margin-bottom: 20px; }
+
+.pc-hero { background: linear-gradient(135deg, #ff8a5c 0%, #ff5c8a 55%, #ffb84d 100%); color: #fff; text-align: center; padding: 120px 28px 140px; border-radius: 0 0 48px 48px; position: relative; overflow: hidden; }
+.pc-hero::before, .pc-hero::after { content: ""; position: absolute; border-radius: 50%; background: rgba(255,255,255,.14); }
+.pc-hero::before { width: 340px; height: 340px; top: -120px; left: -100px; }
+.pc-hero::after { width: 260px; height: 260px; bottom: -90px; right: -60px; }
+.pc-hero .label { background: rgba(255,255,255,.22); color: #fff; }
+.pc-hero h2 { font-size: clamp(28px, 4.8vw, 48px); font-weight: 800; letter-spacing: .05em; line-height: 1.6; margin-bottom: 20px; position: relative; }
+.pc-hero p { font-size: 15px; opacity: .92; margin-bottom: 44px; position: relative; }
+.pc-btn {
+  display: inline-block; background: #fff; color: #ff5c8a;
+  font-size: 15px; font-weight: 800; letter-spacing: .08em;
+  padding: 17px 48px; border-radius: 999px;
+  box-shadow: 0 8px 22px rgba(150, 40, 70, .3);
+  transition: transform .2s, box-shadow .2s; position: relative;
+}
+.pc-btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 14px 28px rgba(150, 40, 70, .35); }
+
+.pc-sec { padding: 96px 0; text-align: center; }
+.pc h3.title { font-size: clamp(22px, 3.4vw, 32px); font-weight: 800; letter-spacing: .08em; margin-bottom: 18px; }
+.pc .lead { font-size: 14px; color: #8a7a85; margin-bottom: 52px; }
+
+.pc-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.pc-value { border-radius: 28px; padding: 40px 28px; text-align: center; }
+.pc-value:nth-child(1) { background: #ffe9f0; }
+.pc-value:nth-child(2) { background: #fff3d9; }
+.pc-value:nth-child(3) { background: #e3f4ec; }
+.pc-value .icon { width: 58px; height: 58px; border-radius: 50%; margin: 0 auto 18px; display: grid; place-items: center; font-size: 24px; font-weight: 800; color: #fff; }
+.pc-value:nth-child(1) .icon { background: #ff5c8a; }
+.pc-value:nth-child(2) .icon { background: #ffb84d; }
+.pc-value:nth-child(3) .icon { background: #3dbd8a; }
+.pc-value h4 { font-size: 17px; font-weight: 800; margin-bottom: 10px; }
+.pc-value p { font-size: 13px; color: #6f6069; text-align: left; }
+
+.pc-works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.pc-work { background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 6px 18px rgba(160, 90, 110, .12); transition: transform .25s; }
+.pc-work:hover { transform: translateY(-6px) rotate(-.5deg); }
+.pc-work img { border-radius: 0; }
+.pc-work .body { padding: 20px 22px 26px; text-align: center; }
+.pc-work h4 { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
+.pc-work span { display: inline-block; font-size: 11px; font-weight: 800; color: #ff5c8a; background: #ffe9f0; border-radius: 999px; padding: 3px 14px; }
+
+.pc-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.pc-plan { background: #fff; border-radius: 28px; padding: 42px 30px; box-shadow: 0 6px 18px rgba(160, 90, 110, .1); position: relative; }
+.pc-plan.featured { border: 3px solid #ff5c8a; transform: scale(1.03); }
+.pc-plan.featured::before { content: "人気No.1"; position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: #ff5c8a; color: #fff; font-size: 12px; font-weight: 800; border-radius: 999px; padding: 4px 20px; }
+.pc-plan h4 { font-size: 16px; font-weight: 800; margin-bottom: 12px; }
+.pc-plan .price { font-size: 32px; font-weight: 800; color: #ff5c8a; margin-bottom: 20px; }
+.pc-plan .price small { font-size: 14px; color: #8a7a85; font-weight: 500; }
+.pc-plan li { font-size: 13px; color: #6f6069; padding: 7px 0; border-top: 1px dashed #f0dfe6; }
+
+.pc-cta { margin: 0 28px; }
+.pc-cta .inner { max-width: 984px; margin: 0 auto 96px; background: linear-gradient(135deg, #ff8a5c, #ff5c8a); border-radius: 40px; text-align: center; color: #fff; padding: 80px 28px; }
+.pc-cta h3 { font-size: clamp(22px, 3.4vw, 32px); font-weight: 800; letter-spacing: .06em; margin-bottom: 14px; }
+.pc-cta p { font-size: 14px; opacity: .92; margin-bottom: 38px; }
+
+/* ================================================================
+   Pattern D — コーポレート・信頼感
+   青系・整然グリッド・堅実
+================================================================ */
+.pd { background: #fff; color: #20303f; font-family: "Noto Sans JP", sans-serif; }
+.pd .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+.pd .label { font-size: 12px; font-weight: 700; letter-spacing: .2em; color: #1056a8; display: block; margin-bottom: 12px; }
+.pd .label::before { content: "■"; font-size: 9px; margin-right: 8px; vertical-align: 2px; }
+
+.pd-hero { background: linear-gradient(100deg, #0d3e7d 0%, #1056a8 70%, #1d6fd0 100%); color: #fff; padding: 110px 0 100px; }
+.pd-hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
+.pd-hero .kicker { font-size: 13px; font-weight: 700; letter-spacing: .14em; border: 1px solid rgba(255,255,255,.45); display: inline-block; padding: 5px 16px; margin-bottom: 24px; }
+.pd-hero h2 { font-size: clamp(26px, 4.2vw, 42px); font-weight: 900; letter-spacing: .06em; line-height: 1.6; margin-bottom: 20px; }
+.pd-hero p { font-size: 14.5px; color: #cfe0f5; margin-bottom: 40px; }
+.pd-btn {
+  display: inline-block; background: #ff9d1e; color: #20303f;
+  font-size: 15px; font-weight: 900; letter-spacing: .08em;
+  padding: 17px 46px; border-radius: 4px;
+  box-shadow: 0 4px 0 #c87b14; transition: transform .15s, box-shadow .15s;
+}
+.pd-btn:hover { transform: translateY(2px); box-shadow: 0 2px 0 #c87b14; }
+.pd-hero .visual { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.25); border-radius: 6px; padding: 10px; }
+
+.pd-strip { background: #0d3e7d; color: #cfe0f5; font-size: 12.5px; letter-spacing: .1em; text-align: center; padding: 12px 20px; border-top: 1px solid rgba(255,255,255,.18); }
+.pd-strip b { color: #ffce8a; }
+
+.pd-sec { padding: 92px 0; }
+.pd-sec.alt { background: #f2f6fb; }
+.pd h3.title { font-size: clamp(22px, 3.2vw, 30px); font-weight: 900; letter-spacing: .08em; margin-bottom: 12px; }
+.pd .lead { font-size: 14px; color: #5d6f80; margin-bottom: 48px; }
+
+.pd-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pd-value { background: #fff; border: 1px solid #d9e4f0; border-top: 3px solid #1056a8; border-radius: 4px; padding: 36px 28px; }
+.pd-value .step { font-size: 11px; font-weight: 700; letter-spacing: .24em; color: #1056a8; display: block; margin-bottom: 12px; }
+.pd-value h4 { font-size: 17px; font-weight: 900; margin-bottom: 10px; }
+.pd-value p { font-size: 13px; color: #5d6f80; }
+
+.pd-works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pd-work { border: 1px solid #d9e4f0; border-radius: 4px; overflow: hidden; background: #fff; }
+.pd-work .body { padding: 18px 20px 22px; border-top: 1px solid #d9e4f0; }
+.pd-work h4 { font-size: 14.5px; font-weight: 700; margin-bottom: 4px; }
+.pd-work span { font-size: 11.5px; color: #1056a8; font-weight: 700; letter-spacing: .08em; }
+
+.pd-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pd-plan { border: 1px solid #d9e4f0; border-radius: 4px; background: #fff; overflow: hidden; display: flex; flex-direction: column; }
+.pd-plan .head { background: #20303f; color: #fff; text-align: center; padding: 14px; font-size: 14px; font-weight: 900; letter-spacing: .18em; }
+.pd-plan.featured .head { background: #1056a8; }
+.pd-plan.featured { border: 2px solid #1056a8; }
+.pd-plan .price { text-align: center; font-size: 30px; font-weight: 900; padding: 26px 0 8px; }
+.pd-plan .price small { font-size: 13px; color: #5d6f80; font-weight: 500; }
+.pd-plan .note { text-align: center; font-size: 12px; color: #5d6f80; margin-bottom: 18px; }
+.pd-plan ul { padding: 0 26px 30px; }
+.pd-plan li { font-size: 13px; color: #44566a; padding: 8px 0 8px 24px; border-top: 1px solid #ecf2f9; position: relative; }
+.pd-plan li::before { content: "✓"; position: absolute; left: 2px; color: #1056a8; font-weight: 900; }
+
+.pd-cta { background: linear-gradient(100deg, #0d3e7d, #1056a8); color: #fff; text-align: center; padding: 90px 28px; }
+.pd-cta h3 { font-size: clamp(22px, 3.2vw, 30px); font-weight: 900; letter-spacing: .08em; margin-bottom: 14px; }
+.pd-cta p { font-size: 14px; color: #cfe0f5; margin-bottom: 36px; }
+
+/* ================================================================
+   Pattern E — クリエイティブ・大胆
+   特大タイポ・非対称・動き
+================================================================ */
+.pe { background: #f1efe9; color: #161616; font-family: "Noto Sans JP", sans-serif; overflow: hidden; }
+.pe .wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+.pe .en { font-family: "Anton", sans-serif; letter-spacing: .02em; }
+.pe .mono { font-family: "IBM Plex Mono", monospace; }
+
+.pe-hero { padding: 110px 0 0; position: relative; }
+.pe-hero .mono { font-size: 12px; letter-spacing: .26em; color: #e8442e; display: block; margin-bottom: 26px; }
+.pe-hero h2 { font-size: clamp(34px, 7vw, 78px); font-weight: 900; line-height: 1.35; letter-spacing: .03em; margin-bottom: 30px; }
+.pe-hero h2 .stroke { color: transparent; -webkit-text-stroke: 1.5px #161616; }
+.pe-hero p { max-width: 480px; font-size: 14.5px; color: #5c5a54; margin-bottom: 42px; }
+.pe-btn {
+  display: inline-block; background: #161616; color: #f1efe9;
+  font-size: 14px; font-weight: 700; letter-spacing: .14em;
+  padding: 18px 50px; border-radius: 999px;
+  transition: background .25s, transform .2s;
+}
+.pe-btn:hover { background: #e8442e; transform: rotate(-1.5deg) scale(1.04); }
+.pe-hero .huge {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(70px, 15vw, 190px);
+  line-height: .9; white-space: nowrap;
+  color: transparent; -webkit-text-stroke: 1px #c9c5b8;
+  user-select: none; margin: 50px 0 -8px; text-align: right;
+}
+
+.pe-marquee { background: #e8442e; color: #f1efe9; overflow: hidden; transform: rotate(-1.4deg) scale(1.03); }
+.pe-marquee .track { display: flex; width: max-content; animation: pe-scroll 26s linear infinite; }
+.pe-marquee span { font-family: "Anton", sans-serif; font-size: 22px; letter-spacing: .08em; padding: 12px 0; white-space: nowrap; }
+@keyframes pe-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.pe-sec { padding: 110px 0; }
+.pe h3.title { font-family: "Anton", sans-serif; font-size: clamp(40px, 7vw, 84px); line-height: 1; margin-bottom: 14px; }
+.pe h3.title small { font-family: "Noto Sans JP", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: .26em; color: #e8442e; margin-left: 18px; }
+.pe .lead { font-size: 14px; color: #5c5a54; margin-bottom: 60px; }
+
+.pe-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1.5px solid #161616; background: #161616; gap: 1.5px; }
+.pe-value { background: #f1efe9; padding: 44px 30px 50px; position: relative; transition: background .3s, color .3s; }
+.pe-value:hover { background: #161616; color: #f1efe9; }
+.pe-value .en { font-size: 38px; display: block; margin-bottom: 20px; color: #e8442e; }
+.pe-value h4 { font-size: 17px; font-weight: 900; letter-spacing: .1em; margin-bottom: 12px; }
+.pe-value p { font-size: 13px; color: #5c5a54; transition: color .3s; }
+.pe-value:hover p { color: #b8b5ab; }
+
+.pe-works { display: flex; flex-direction: column; gap: 0; border-top: 1.5px solid #161616; }
+.pe-work { display: grid; grid-template-columns: 90px 1fr 360px; gap: 36px; align-items: center; padding: 30px 6px; border-bottom: 1.5px solid #161616; transition: background .25s; }
+.pe-work:hover { background: #e9e6dc; }
+.pe-work .idx { font-family: "Anton", sans-serif; font-size: 34px; color: transparent; -webkit-text-stroke: 1px #161616; }
+.pe-work h4 { font-size: clamp(17px, 2.4vw, 24px); font-weight: 900; letter-spacing: .05em; }
+.pe-work .mono { display: block; font-size: 11px; letter-spacing: .18em; color: #e8442e; margin-top: 6px; }
+.pe-work img { border: 1.5px solid #161616; }
+.pe-work:nth-child(even) img { transform: rotate(1.2deg); }
+.pe-work:nth-child(odd) img { transform: rotate(-1.2deg); }
+
+.pe-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; align-items: end; }
+.pe-plan { border: 1.5px solid #161616; padding: 40px 30px; background: #f1efe9; position: relative; }
+.pe-plan.featured { background: #161616; color: #f1efe9; padding-bottom: 56px; }
+.pe-plan.featured::before { content: "BEST"; position: absolute; top: -14px; right: 22px; background: #e8442e; color: #f1efe9; font-family: "Anton", sans-serif; font-size: 13px; letter-spacing: .14em; padding: 3px 16px; transform: rotate(2deg); }
+.pe-plan .en { font-size: 26px; display: block; margin-bottom: 16px; }
+.pe-plan .price { font-family: "Anton", sans-serif; font-size: 40px; margin-bottom: 22px; }
+.pe-plan .price small { font-size: 16px; color: #e8442e; }
+.pe-plan li { font-size: 12.5px; padding: 7px 0; border-top: 1px solid rgba(120,118,110,.35); }
+.pe-plan.featured li { color: #b8b5ab; }
+
+.pe-cta { background: #161616; color: #f1efe9; text-align: center; padding: 130px 28px 140px; position: relative; overflow: hidden; }
+.pe-cta .ghost { position: absolute; inset: 0; display: grid; place-items: center; font-family: "Anton", sans-serif; font-size: clamp(100px, 24vw, 300px); color: transparent; -webkit-text-stroke: 1px #34322c; user-select: none; pointer-events: none; line-height: 1; }
+.pe-cta h3 { font-size: clamp(26px, 4.4vw, 44px); font-weight: 900; letter-spacing: .1em; margin-bottom: 18px; position: relative; }
+.pe-cta p { color: #b8b5ab; font-size: 14px; margin-bottom: 44px; position: relative; }
+.pe-cta .pe-btn { background: #e8442e; position: relative; }
+.pe-cta .pe-btn:hover { background: #f1efe9; color: #161616; }
+
+/* ---- フッター ---- */
+.guide-foot { background: #1c1d20; color: #9aa0a6; text-align: center; padding: 48px 24px; font-size: 12px; letter-spacing: .14em; font-family: "IBM Plex Mono", monospace; }
+
+/* ================================================================
+   相談CTA 2ボタン（LINE＋メール）共通
+================================================================ */
+.btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta-note { margin-top: 20px; font-size: 12px; letter-spacing: .06em; }
+
+/* A: ミニマル */
+.pa-btn.line { background: #06C755; }
+.pa-btn.line:hover { background: #04a948; }
+.pa-btn.sub { background: transparent; color: #141414; border: 1px solid #141414; }
+.pa-btn.sub:hover { background: #141414; color: #fff; }
+.pa .cta-note { color: #6b6b66; }
+
+/* B: 高級ダーク */
+.pb-btn.line { background: #06C755; border-color: #06C755; color: #fff; }
+.pb-btn.line:hover { background: #04a948; border-color: #04a948; color: #fff; }
+.pb .cta-note { color: #9d968a; }
+
+/* C: ポップ */
+.pc-btn.line { background: #06C755; color: #fff; box-shadow: 0 8px 22px rgba(4, 130, 60, .35); }
+.pc-btn.sub { background: rgba(255,255,255,.18); color: #fff; border: 1.5px solid rgba(255,255,255,.7); box-shadow: none; }
+.pc .cta-note { color: rgba(255,255,255,.85); }
+
+/* D: コーポレート */
+.pd-btn.line { background: #06C755; color: #fff; box-shadow: 0 4px 0 #049a43; }
+.pd-btn.sub { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.65); box-shadow: none; }
+.pd-btn.sub:hover { transform: none; background: rgba(255,255,255,.12); }
+.pd .cta-note { color: #cfe0f5; }
+
+/* E: クリエイティブ */
+.pe-cta .pe-btn.line { background: #06C755; }
+.pe-cta .pe-btn.line:hover { background: #f1efe9; color: #161616; }
+.pe-cta .pe-btn.sub { background: transparent; color: #f1efe9; border: 1.5px solid #f1efe9; }
+.pe-cta .pe-btn.sub:hover { background: #f1efe9; color: #161616; }
+.pe .cta-note { color: #b8b5ab; position: relative; }
+
+/* ================================================================
+   レスポンシブ（共通）
+================================================================ */
+@media (max-width: 860px) {
+  .pa-values, .pa-works, .pa-plans,
+  .pb-values, .pb-works, .pb-plans,
+  .pc-values, .pc-works, .pc-plans,
+  .pd-values, .pd-works, .pd-plans,
+  .pe-values, .pe-plans { grid-template-columns: 1fr; }
+  .pd-hero .wrap { grid-template-columns: 1fr; }
+  .pc-plan.featured { transform: none; }
+  .pe-work { grid-template-columns: 1fr; gap: 18px; }
+  .pe-work img { max-width: 420px; }
+  .pa-hero, .pb-hero { padding-top: 96px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════ サンプル集ヘッダー ════════════ -->
+<header class="guide-head">
+  <span class="mono">DESIGN SAMPLES — 5 PATTERNS</span>
+  <h1>同じLPを、5つのデザインテイストで。</h1>
+  <p>掲載内容（キャッチコピー・提供価値・実績・料金・お問い合わせ）はすべて共通です。お好みのテイストをお選びください。組み合わせ（例：Aのレイアウト×Dの配色）も可能です。</p>
+</header>
+
+<nav class="guide-nav">
+  <a href="#pattern-a">A: ミニマル</a>
+  <a href="#pattern-b">B: 高級ダーク</a>
+  <a href="#pattern-c">C: ポップ</a>
+  <a href="#pattern-d">D: コーポレート</a>
+  <a href="#pattern-e">E: クリエイティブ</a>
+</nav>
+
+<!-- ════════════════════════════════════════════
+     Pattern A — ミニマル・モダン
+════════════════════════════════════════════ -->
+<div class="pattern-label" id="pattern-a">
+  <div class="inner">
+    <span class="tag">PATTERN A</span>
+    <h2>ミニマル・モダン系</h2>
+    <p>余白をたっぷり取ったモノトーン基調に、アクセント1色（コバルトブルー）。情報がすっと頭に入る、クセのない現代的なテイスト。業種を問わず使いやすい万能型です。</p>
+  </div>
+</div>
+
+<section class="pa">
+  <div class="pa-hero">
+    <div class="wrap">
+      <span class="label">Web Design / Development / SEO</span>
+      <h2>オーダーメイドの<br>ホームページ<b>制作</b>。</h2>
+      <p>テンプレートに流し込んで終わり、にはしません。デザインから機能実装、SEO対策まで、あなたの商売に合わせてゼロから組み立てます。</p>
+      <a class="pa-btn" href="#contact-a">無料で相談する</a>
+    </div>
+  </div>
+
+  <div class="pa-sec">
+    <div class="wrap">
+      <span class="label">Service</span>
+      <h3 class="title">デザインからSEOまで、一気通貫。</h3>
+      <div class="pa-values">
+        <div>
+          <span class="num">01</span>
+          <h4>デザイン</h4>
+          <p>業種の「らしさ」から設計。既製テンプレートは使わず、写真選びや文字組みまで一件ごとにつくります。</p>
+        </div>
+        <div>
+          <span class="num">02</span>
+          <h4>機能実装</h4>
+          <p>予約フォーム、ブログ、LINE連携など。「公開後に自分で使えるか」まで考えて実装します。</p>
+        </div>
+        <div>
+          <span class="num">03</span>
+          <h4>SEO対策</h4>
+          <p>「地域名＋業種」で探すお客様に届く土台づくり。構成・見出し・表示速度まで整えて納品します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pa-sec">
+    <div class="wrap">
+      <span class="label">Works</span>
+      <h3 class="title">制作実績</h3>
+      <div class="pa-works">
+        <a class="pa-work" href="https://motorogu-essays-in-idleness.com/" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/ededea/777?text=Personal+Gym" alt="パーソナルジムの公式サイト" loading="lazy">
+          <div class="body"><h4>パーソナルジム公式サイト</h4><span>STORE / BLOG / SEO</span></div>
+        </a>
+        <a class="pa-work" href="https://baseball-club-homepage.vercel.app/index.html" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/ededea/777?text=Baseball+Club" alt="企業野球部の公式サイト" loading="lazy">
+          <div class="body"><h4>企業野球部の公式サイト</h4><span>TEAM / SCHEDULE</span></div>
+        </a>
+        <a class="pa-work" href="https://cafe-homepage-liart.vercel.app/index.html" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/ededea/777?text=Cafe" alt="海辺の珈琲店のサイト" loading="lazy">
+          <div class="body"><h4>海辺の珈琲店のサイト</h4><span>CAFE / RESERVATION</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pa-sec">
+    <div class="wrap">
+      <span class="label">Price</span>
+      <h3 class="title">料金体系</h3>
+      <div class="pa-plans">
+        <div class="pa-plan">
+          <h4>LIGHT</h4>
+          <p class="price">¥80,000<small>〜</small></p>
+          <ul>
+            <li>1ページ（LP形式）</li>
+            <li>スマホ対応</li>
+            <li>お問い合わせ導線</li>
+            <li>基本のSEO設定</li>
+          </ul>
+        </div>
+        <div class="pa-plan featured">
+          <h4>STANDARD</h4>
+          <p class="price">¥200,000<small>〜</small></p>
+          <ul>
+            <li>5ページ前後の公式サイト</li>
+            <li>お問い合わせフォーム</li>
+            <li>地図・SNS・LINE連携</li>
+            <li>構成からのSEO設計</li>
+          </ul>
+        </div>
+        <div class="pa-plan">
+          <h4>PREMIUM</h4>
+          <p class="price">¥350,000<small>〜</small></p>
+          <ul>
+            <li>ページ数・構成自由</li>
+            <li>予約フォーム／ブログ</li>
+            <li>撮影手配・多言語も相談可</li>
+            <li>本格的なSEO設計</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pa-cta" id="contact-a">
+    <div class="wrap">
+      <h3>まず、話だけでも。</h3>
+      <p>「いくらかかるか知りたい」程度の段階で大丈夫です。お見積もりまで無料です。</p>
+      <div class="btn-row">
+        <!-- TODO: href を LINE 友だち追加URL（https://lin.ee/xxxx）に差し替え -->
+        <a class="pa-btn line" href="#">LINEで相談する</a>
+        <a class="pa-btn sub" href="mailto:koki.yoshida@gimic.co.jp">メールで相談する</a>
+      </div>
+      <p class="cta-note">※ LINEは友だち追加だけでもOKです</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     Pattern B — 高級感・ダーク
+════════════════════════════════════════════ -->
+<div class="pattern-label" id="pattern-b">
+  <div class="inner">
+    <span class="tag">PATTERN B</span>
+    <h2>高級感・ダーク系</h2>
+    <p>黒を基調にゴールドのアクセント、見出しはセリフ体。サロン・レストラン・士業など、単価が高く「上質さ」を打ち出したい業種に向くテイストです。</p>
+  </div>
+</div>
+
+<section class="pb">
+  <div class="pb-hero">
+    <div class="wrap">
+      <span class="label">Bespoke Web Design</span>
+      <h2>オーダーメイドの<br><em>ホームページ制作</em>。</h2>
+      <p>― 既製品ではない、あなたのためだけの一着を仕立てるように ―</p>
+      <a class="pb-btn" href="#contact-b">ご相談はこちら</a>
+    </div>
+  </div>
+
+  <div class="pb-sec">
+    <div class="wrap">
+      <span class="label">Service</span>
+      <div class="rule"></div>
+      <h3 class="title">三位一体の制作</h3>
+      <div class="pb-values">
+        <div>
+          <span class="en">Design</span>
+          <h4>デザイン</h4>
+          <p>業種の品格を映す意匠。写真の選定から文字の間まで、一件ごとに誂えます。</p>
+        </div>
+        <div>
+          <span class="en">Function</span>
+          <h4>機能実装</h4>
+          <p>予約・お問い合わせ・更新機能。公開後の使い心地まで設計に含めます。</p>
+        </div>
+        <div>
+          <span class="en">SEO</span>
+          <h4>検索対策</h4>
+          <p>探しているお客様に静かに見つけていただくための、確かな土台を整えます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-sec">
+    <div class="wrap">
+      <span class="label">Works</span>
+      <div class="rule"></div>
+      <h3 class="title">制作実績</h3>
+      <div class="pb-works">
+        <a class="pb-work" href="https://motorogu-essays-in-idleness.com/" target="_blank" rel="noopener">
+          <div class="frame"><img src="https://placehold.co/640x400/14120e/c8a96e?text=Personal+Gym" alt="パーソナルジムの公式サイト" loading="lazy"></div>
+          <h4>パーソナルジム公式サイト</h4><span>STORE — BLOG — SEO</span>
+        </a>
+        <a class="pb-work" href="https://baseball-club-homepage.vercel.app/index.html" target="_blank" rel="noopener">
+          <div class="frame"><img src="https://placehold.co/640x400/14120e/c8a96e?text=Baseball+Club" alt="企業野球部の公式サイト" loading="lazy"></div>
+          <h4>企業野球部の公式サイト</h4><span>TEAM — SCHEDULE</span>
+        </a>
+        <a class="pb-work" href="https://cafe-homepage-liart.vercel.app/index.html" target="_blank" rel="noopener">
+          <div class="frame"><img src="https://placehold.co/640x400/14120e/c8a96e?text=Cafe" alt="海辺の珈琲店のサイト" loading="lazy"></div>
+          <h4>海辺の珈琲店のサイト</h4><span>CAFE — RESERVATION</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-sec">
+    <div class="wrap">
+      <span class="label">Price</span>
+      <div class="rule"></div>
+      <h3 class="title">料金のご案内</h3>
+      <div class="pb-plans">
+        <div class="pb-plan">
+          <span class="en">Light</span>
+          <p class="price">¥80,000<small>〜</small></p>
+          <ul>
+            <li>1ページ（LP形式）</li>
+            <li>スマホ対応</li>
+            <li>お問い合わせ導線</li>
+            <li>基本のSEO設定</li>
+          </ul>
+        </div>
+        <div class="pb-plan featured">
+          <span class="en">Standard</span>
+          <p class="price">¥200,000<small>〜</small></p>
+          <ul>
+            <li>5ページ前後の公式サイト</li>
+            <li>お問い合わせフォーム</li>
+            <li>地図・SNS・LINE連携</li>
+            <li>構成からのSEO設計</li>
+          </ul>
+        </div>
+        <div class="pb-plan">
+          <span class="en">Premium</span>
+          <p class="price">¥350,000<small>〜</small></p>
+          <ul>
+            <li>ページ数・構成自由</li>
+            <li>予約フォーム／ブログ</li>
+            <li>撮影手配・多言語も相談可</li>
+            <li>本格的なSEO設計</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-cta" id="contact-b">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h3>まずは、お話から。</h3>
+      <p>お見積もりまでは無料にて承ります。一両日中にご返信いたします。</p>
+      <div class="btn-row">
+        <!-- TODO: href を LINE 友だち追加URL（https://lin.ee/xxxx）に差し替え -->
+        <a class="pb-btn line" href="#">LINEで相談する</a>
+        <a class="pb-btn" href="mailto:koki.yoshida@gimic.co.jp">メールで相談する</a>
+      </div>
+      <p class="cta-note">※ LINEは友だち追加のみでも結構です</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     Pattern C — ポップ・カラフル
+════════════════════════════════════════════ -->
+<div class="pattern-label" id="pattern-c">
+  <div class="inner">
+    <span class="tag">PATTERN C</span>
+    <h2>ポップ・カラフル系</h2>
+    <p>暖色グラデーションと丸みのあるパーツで、親しみやすさを最優先。カフェ・教室・子ども向けサービスなど、敷居の低さを伝えたい業種に向くテイストです。</p>
+  </div>
+</div>
+
+<section class="pc">
+  <div class="pc-hero">
+    <span class="label">＼ デザインも機能もSEOも ／</span>
+    <h2>オーダーメイドの<br>ホームページ制作</h2>
+    <p>あなたのお店の「らしさ」を、そのままWebに。</p>
+    <a class="pc-btn" href="#contact-c">無料で相談してみる →</a>
+  </div>
+
+  <div class="pc-sec">
+    <div class="wrap">
+      <h3 class="title">ぜんぶ、おまかせOK！</h3>
+      <p class="lead">デザイン〜機能実装〜SEO対策まで、窓口ひとつで一気通貫。</p>
+      <div class="pc-values">
+        <div class="pc-value">
+          <div class="icon">D</div>
+          <h4>デザイン</h4>
+          <p>テンプレは使いません。お店の雰囲気に合わせて、色も写真も文字もぜんぶオーダーメイド。</p>
+        </div>
+        <div class="pc-value">
+          <div class="icon">F</div>
+          <h4>機能実装</h4>
+          <p>予約フォームもブログもLINE連携も。公開したあと自分で使えるかどうかまで考えてつくります。</p>
+        </div>
+        <div class="pc-value">
+          <div class="icon">S</div>
+          <h4>SEO対策</h4>
+          <p>「地域名＋業種」で検索したお客さまに見つけてもらえるよう、土台からしっかり整えます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-sec" style="padding-top:0">
+    <div class="wrap">
+      <h3 class="title">つくったサイトたち</h3>
+      <p class="lead">すべて実際に公開されているサイトです。</p>
+      <div class="pc-works">
+        <a class="pc-work" href="https://motorogu-essays-in-idleness.com/" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/ffe9f0/ff5c8a?text=Personal+Gym" alt="パーソナルジムの公式サイト" loading="lazy">
+          <div class="body"><h4>パーソナルジム公式サイト</h4><span>店舗 × ブログ × SEO</span></div>
+        </a>
+        <a class="pc-work" href="https://baseball-club-homepage.vercel.app/index.html" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/fff3d9/ff8a5c?text=Baseball+Club" alt="企業野球部の公式サイト" loading="lazy">
+          <div class="body"><h4>企業野球部の公式サイト</h4><span>チーム × 試合結果</span></div>
+        </a>
+        <a class="pc-work" href="https://cafe-homepage-liart.vercel.app/index.html" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/e3f4ec/3dbd8a?text=Cafe" alt="海辺の珈琲店のサイト" loading="lazy">
+          <div class="body"><h4>海辺の珈琲店のサイト</h4><span>カフェ × 予約</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-sec" style="padding-top:0">
+    <div class="wrap">
+      <h3 class="title">料金プラン</h3>
+      <p class="lead">「この予算でどこまでできる？」という相談からでOKです。</p>
+      <div class="pc-plans">
+        <div class="pc-plan">
+          <h4>ライト</h4>
+          <p class="price">¥80,000<small>〜</small></p>
+          <ul>
+            <li>1ページ（LP形式）</li>
+            <li>スマホ対応</li>
+            <li>お問い合わせ導線</li>
+            <li>基本のSEO設定</li>
+          </ul>
+        </div>
+        <div class="pc-plan featured">
+          <h4>スタンダード</h4>
+          <p class="price">¥200,000<small>〜</small></p>
+          <ul>
+            <li>5ページ前後の公式サイト</li>
+            <li>お問い合わせフォーム</li>
+            <li>地図・SNS・LINE連携</li>
+            <li>構成からのSEO設計</li>
+          </ul>
+        </div>
+        <div class="pc-plan">
+          <h4>プレミアム</h4>
+          <p class="price">¥350,000<small>〜</small></p>
+          <ul>
+            <li>ページ数・構成自由</li>
+            <li>予約フォーム／ブログ</li>
+            <li>撮影手配・多言語も相談可</li>
+            <li>本格的なSEO設計</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pc-cta" id="contact-c">
+    <div class="inner">
+      <h3>まずは気軽にどうぞ！</h3>
+      <p>お見積もりまで無料。「話を聞くだけ」も大歓迎です。</p>
+      <div class="btn-row">
+        <!-- TODO: href を LINE 友だち追加URL（https://lin.ee/xxxx）に差し替え -->
+        <a class="pc-btn line" href="#">LINEで相談する →</a>
+        <a class="pc-btn sub" href="mailto:koki.yoshida@gimic.co.jp">メールで相談する</a>
+      </div>
+      <p class="cta-note">＼ 友だち追加だけでもOK！ ／</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     Pattern D — コーポレート・信頼感
+════════════════════════════════════════════ -->
+<div class="pattern-label" id="pattern-d">
+  <div class="inner">
+    <span class="tag">PATTERN D</span>
+    <h2>コーポレート・信頼感系</h2>
+    <p>青系の配色と整然としたグリッドで、堅実さ・誠実さを演出。企業サイト・士業・医療・BtoBサービスなど、信頼が第一の業種に向くテイストです。</p>
+  </div>
+</div>
+
+<section class="pd">
+  <div class="pd-hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker">デザイン × 機能実装 × SEO対策</span>
+        <h2>オーダーメイドの<br>ホームページ制作</h2>
+        <p>テンプレートに頼らず、貴社の事業内容に合わせて設計から実装まで一貫対応。公開後の運用までを見据えたホームページを制作します。</p>
+        <a class="pd-btn" href="#contact-d">無料相談・お見積もり</a>
+      </div>
+      <div class="visual">
+        <img src="https://placehold.co/640x400/0d3e7d/cfe0f5?text=Sample+Works" alt="制作実績イメージ" loading="lazy">
+      </div>
+    </div>
+  </div>
+  <div class="pd-strip">お見積もり無料 ／ オンライン打ち合わせで<b>全国対応</b> ／ 公開後の保守・更新代行にも対応</div>
+
+  <div class="pd-sec">
+    <div class="wrap">
+      <span class="label">SERVICE</span>
+      <h3 class="title">一気通貫の対応範囲</h3>
+      <p class="lead">複数の業者に分けて依頼する必要はありません。窓口ひとつで完結します。</p>
+      <div class="pd-values">
+        <div class="pd-value">
+          <span class="step">SCOPE 01</span>
+          <h4>デザイン</h4>
+          <p>事業の信頼性が伝わる構成・配色を設計。既製テンプレートは使用せず、一件ごとに制作します。</p>
+        </div>
+        <div class="pd-value">
+          <span class="step">SCOPE 02</span>
+          <h4>機能実装</h4>
+          <p>お問い合わせフォーム、予約、ブログ、各種連携。公開後に自社で運用できる形で実装します。</p>
+        </div>
+        <div class="pd-value">
+          <span class="step">SCOPE 03</span>
+          <h4>SEO対策</h4>
+          <p>ページ構成・見出し設計・表示速度の最適化まで、検索流入の土台を整えて納品します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pd-sec alt">
+    <div class="wrap">
+      <span class="label">WORKS</span>
+      <h3 class="title">制作実績</h3>
+      <p class="lead">いずれも実際に公開中のサイトです。クリックでご覧いただけます。</p>
+      <div class="pd-works">
+        <a class="pd-work" href="https://motorogu-essays-in-idleness.com/" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/f2f6fb/1056a8?text=Personal+Gym" alt="パーソナルジムの公式サイト" loading="lazy">
+          <div class="body"><h4>パーソナルジム公式サイト</h4><span>店舗サイト｜ブログ｜SEO</span></div>
+        </a>
+        <a class="pd-work" href="https://baseball-club-homepage.vercel.app/index.html" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/f2f6fb/1056a8?text=Baseball+Club" alt="企業野球部の公式サイト" loading="lazy">
+          <div class="body"><h4>企業野球部の公式サイト</h4><span>チームサイト｜試合結果・日程</span></div>
+        </a>
+        <a class="pd-work" href="https://cafe-homepage-liart.vercel.app/index.html" target="_blank" rel="noopener">
+          <img src="https://placehold.co/640x400/f2f6fb/1056a8?text=Cafe" alt="海辺の珈琲店のサイト" loading="lazy">
+          <div class="body"><h4>海辺の珈琲店のサイト</h4><span>店舗サイト｜予約フォーム</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pd-sec">
+    <div class="wrap">
+      <span class="label">PRICE</span>
+      <h3 class="title">料金体系</h3>
+      <p class="lead">掲載価格は目安です。内容を伺ったうえで正式なお見積もりを提示します。</p>
+      <div class="pd-plans">
+        <div class="pd-plan">
+          <div class="head">ライト</div>
+          <p class="price">¥80,000<small>〜（税別）</small></p>
+          <p class="note">まずは1ページから</p>
+          <ul>
+            <li>1ページ（LP形式）</li>
+            <li>スマホ対応</li>
+            <li>お問い合わせ導線</li>
+            <li>基本のSEO設定</li>
+          </ul>
+        </div>
+        <div class="pd-plan featured">
+          <div class="head">スタンダード</div>
+          <p class="price">¥200,000<small>〜（税別）</small></p>
+          <p class="note">公式サイトの定番構成</p>
+          <ul>
+            <li>5ページ前後の公式サイト</li>
+            <li>お問い合わせフォーム</li>
+            <li>地図・SNS・LINE連携</li>
+            <li>構成からのSEO設計</li>
+          </ul>
+        </div>
+        <div class="pd-plan">
+          <div class="head">プレミアム</div>
+          <p class="price">¥350,000<small>〜（税別）</small></p>
+          <p class="note">機能も規模も要望に応じて</p>
+          <ul>
+            <li>ページ数・構成自由</li>
+            <li>予約フォーム／ブログ</li>
+            <li>撮影手配・多言語も相談可</li>
+            <li>本格的なSEO設計</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pd-cta" id="contact-d">
+    <h3>お見積もり・ご相談は無料です</h3>
+    <p>現在のサイトの課題整理からでも構いません。一両日中にご返信します。</p>
+    <div class="btn-row">
+      <!-- TODO: href を LINE 友だち追加URL（https://lin.ee/xxxx）に差し替え -->
+      <a class="pd-btn line" href="#">LINEで相談する</a>
+      <a class="pd-btn sub" href="mailto:koki.yoshida@gimic.co.jp">メールで相談する</a>
+    </div>
+    <p class="cta-note">※ LINEは友だち追加だけでも構いません</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     Pattern E — クリエイティブ・大胆
+════════════════════════════════════════════ -->
+<div class="pattern-label" id="pattern-e">
+  <div class="inner">
+    <span class="tag">PATTERN E</span>
+    <h2>クリエイティブ・大胆系</h2>
+    <p>特大タイポグラフィ、非対称レイアウト、流れるマーキー。記憶に残るインパクト重視のテイスト。クリエイター・ブランド系・若年層向けの業種に向きます。</p>
+  </div>
+</div>
+
+<section class="pe">
+  <div class="pe-hero">
+    <div class="wrap">
+      <span class="mono">DESIGN / FUNCTION / SEO — ALL CUSTOM MADE</span>
+      <h2>オーダーメイドの<br><span class="stroke">ホームページ制作</span>。</h2>
+      <p>テンプレートに流し込んで終わり、にはしない。デザインも機能もSEOも、ゼロから組み立てる。</p>
+      <a class="pe-btn" href="#contact-e">無料で相談する</a>
+    </div>
+    <p class="huge en">MAKE IT YOURS</p>
+  </div>
+
+  <div class="pe-marquee" aria-hidden="true">
+    <div class="track">
+      <span>DESIGN — FUNCTION — SEO — DESIGN — FUNCTION — SEO — DESIGN — FUNCTION — SEO —&nbsp;</span>
+      <span>DESIGN — FUNCTION — SEO — DESIGN — FUNCTION — SEO — DESIGN — FUNCTION — SEO —&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="pe-sec">
+    <div class="wrap">
+      <h3 class="title en">SERVICE<small>できること</small></h3>
+      <p class="lead">見た目だけでは仕事の道具にならない。三つそろえて納品する。</p>
+      <div class="pe-values">
+        <div class="pe-value">
+          <span class="en">A</span>
+          <h4>デザイン</h4>
+          <p>業種の「らしさ」から設計。テンプレは使わず、写真も文字組みも一件ごとに。</p>
+        </div>
+        <div class="pe-value">
+          <span class="en">B</span>
+          <h4>機能実装</h4>
+          <p>予約・ブログ・LINE連携。「公開後に自分で使えるか」まで考えて組む。</p>
+        </div>
+        <div class="pe-value">
+          <span class="en">C</span>
+          <h4>SEO対策</h4>
+          <p>「地域名＋業種」で探す人に届く土台。構成・見出し・速度まで整える。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pe-sec" style="padding-top:0">
+    <div class="wrap">
+      <h3 class="title en">WORKS<small>制作実績</small></h3>
+      <p class="lead">すべて実際に公開中。クリックで見られます。</p>
+      <div class="pe-works">
+        <a class="pe-work" href="https://motorogu-essays-in-idleness.com/" target="_blank" rel="noopener">
+          <span class="idx en">01</span>
+          <div><h4>パーソナルジム公式サイト</h4><span class="mono">STORE / BLOG / SEO</span></div>
+          <img src="https://placehold.co/640x400/f1efe9/161616?text=Personal+Gym" alt="パーソナルジムの公式サイト" loading="lazy">
+        </a>
+        <a class="pe-work" href="https://baseball-club-homepage.vercel.app/index.html" target="_blank" rel="noopener">
+          <span class="idx en">02</span>
+          <div><h4>企業野球部の公式サイト</h4><span class="mono">TEAM / SCHEDULE</span></div>
+          <img src="https://placehold.co/640x400/f1efe9/161616?text=Baseball+Club" alt="企業野球部の公式サイト" loading="lazy">
+        </a>
+        <a class="pe-work" href="https://cafe-homepage-liart.vercel.app/index.html" target="_blank" rel="noopener">
+          <span class="idx en">03</span>
+          <div><h4>海辺の珈琲店のサイト</h4><span class="mono">CAFE / RESERVATION</span></div>
+          <img src="https://placehold.co/640x400/f1efe9/161616?text=Cafe" alt="海辺の珈琲店のサイト" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pe-sec" style="padding-top:0">
+    <div class="wrap">
+      <h3 class="title en">PRICE<small>料金体系</small></h3>
+      <p class="lead">目安。 「この予算でどこまで？」という相談からでいい。</p>
+      <div class="pe-plans">
+        <div class="pe-plan">
+          <span class="en">LIGHT</span>
+          <p class="price">¥80,000<small>〜</small></p>
+          <ul>
+            <li>1ページ（LP形式）</li>
+            <li>スマホ対応</li>
+            <li>お問い合わせ導線</li>
+            <li>基本のSEO設定</li>
+          </ul>
+        </div>
+        <div class="pe-plan featured">
+          <span class="en">STANDARD</span>
+          <p class="price">¥200,000<small>〜</small></p>
+          <ul>
+            <li>5ページ前後の公式サイト</li>
+            <li>お問い合わせフォーム</li>
+            <li>地図・SNS・LINE連携</li>
+            <li>構成からのSEO設計</li>
+          </ul>
+        </div>
+        <div class="pe-plan">
+          <span class="en">PREMIUM</span>
+          <p class="price">¥350,000<small>〜</small></p>
+          <ul>
+            <li>ページ数・構成自由</li>
+            <li>予約フォーム／ブログ</li>
+            <li>撮影手配・多言語も相談可</li>
+            <li>本格的なSEO設計</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pe-cta" id="contact-e">
+    <p class="ghost" aria-hidden="true">TALK?</p>
+    <h3>まず、話だけでも。</h3>
+    <p>お見積もりまで無料。一両日中に返信します。</p>
+    <div class="btn-row" style="position:relative">
+      <!-- TODO: href を LINE 友だち追加URL（https://lin.ee/xxxx）に差し替え -->
+      <a class="pe-btn line" href="#">LINEで相談する</a>
+      <a class="pe-btn sub" href="mailto:koki.yoshida@gimic.co.jp">メールで相談する</a>
+    </div>
+    <p class="cta-note">※ LINEは友だち追加だけでもOK</p>
+  </div>
+</section>
+
+<footer class="guide-foot">
+  DESIGN SAMPLES — 5 PATTERNS / すべて同一コンテンツ・別テイストで構成
+</footer>
+
+</body>
+</html>
